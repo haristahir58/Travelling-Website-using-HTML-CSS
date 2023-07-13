@@ -1,0 +1,264 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make my Trip | All over Pakistan</title>
+    <link rel="icon" href="/getout symbol.jpg">
+</head>
+<style>
+    /* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    nav input[type="text"] {
+        padding: 5px;
+        width: 300px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="button"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Additional Styles */
+
+    /* Contact Details */
+    .contact-details input[type="text"],
+    .contact-details input[type="email"],
+    .contact-details input[type="tel"] {
+        background-color: #f9f9f9;
+    }
+
+    /* Number of Travellers */
+    .number-of-travellers input[type="button"] {
+        background-color: #666;
+        color: #fff;
+    }
+
+    /* When would you like to go? */
+    .when-to-go input[type="text"],
+    .when-to-go input[type="date"],
+    .when-to-go label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Tour Duration */
+    .tour-duration input[type="button"] {
+        background-color: #666;
+        color: #fff;
+    }
+
+    /* Additional Requirements */
+    .additional-requirements select,
+    .additional-requirements input[type="text"] {
+        background-color: #f9f9f9;
+    }
+
+    /* Please share further details */
+    .further-details textarea {
+        resize: vertical;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+        }
+
+        nav input[type="text"] {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <div>
+            <nav>
+                <form action="form.php">
+                    <a href="/travelling website.html"><img src="/getLogo.png" alt="getout" width="233px"></a>
+                    <input type="text" placeholder="Search by location or Activity" size="40">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <a href="/travelling website.html"><b>HOME</b></a>
+                    <a href="/travelling website.html"><b>TRIPS</b></a>
+                    <a href="/travelling website.html"><b>EXPLORE PAKISTAN</b></a>
+                    <a href="/travelling website.html"><b>VISIT MALDIVES</b></a>
+                    <a href="/travelling website.html"><b>CONTACT</b></a>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <hr>
+
+    <main>
+        <div>
+            <img src="/imgBack.JPG" alt="back" width="100%">
+        </div>
+
+        <br>
+
+        <div class="contact-details">
+            <h1>Contact Details</h1>
+            <p><big><b>Your Full Name</b></big></p>
+            <input type="text" placeholder="Please Enter Your Name">
+            <p><big><b>Your Email</b></big></p>
+            <input type="email" placeholder="Please Enter Your Email">
+            <p><big><b>Your Mobile</b></big></p>
+            <input type="tel" placeholder="Please Enter Your Mobile Number">
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="number-of-travellers">
+            <h1>Number of Travellers</h1>
+            <form action="form.php">
+                <input type="button" value="+" >
+                <input type="text" placeholder="1">
+                <br>
+                <br>
+                <label for="mattress1">
+                    <input type="checkbox" id="mattress1" >Mattress Required
+                </label>
+                <br>
+                <label for="transport1">
+                    <input type="checkbox" id="transport1" >Add Transport
+                </label>
+            </form>
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="when-to-go">
+            <h1>When would you like to go?</h1>
+            <p><big><b>Departure City</b></big></p>
+            <input type="text" placeholder="Please Enter Departure City">
+            <input type="date" name="dates" id="date1" min="2022-07-20" max="2022-09-01">
+            <br>
+            <br>
+            <label for="flex1">
+                <input type="checkbox" id="flex1" >My Data is somewhat flexible
+            </label>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <div class="tour-duration">
+            <h1>Tour Duration</h1>
+            <form action="form.php">
+                <p><b><big>No of Days</big></b></p>
+                <input type="button" value="+" >
+                <input type="text" placeholder="1">
+                <br>
+                <br>
+                <label for="tour1">
+                    <input type="checkbox" id="tour1" >My tour duration is somewhat flexible
+                </label>
+            </form>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <div class="additional-requirements">
+            <h1>Additional Requirements</h1>
+            <p><big><b>Trip Type</b></big></p>
+            <form action="form.php">
+                <select name="tripType" id="trip1">
+                    <option value="Adventure">Adventure</option>
+                    <option value="Sightseeing">Sightseeing</option>
+                    <option value="Adventure + Sightseeing">Adventure + Sightseeing</option>
+                    <option value="Honeymoon">Honeymoon</option>
+                    <option value="School Trip">School Trip</option>
+                    <option value="Corporate Trip">Corporate Trip</option>
+                </select>
+            </form>
+            <p><big><b>Location</b></big></p>
+            <input type="text"  placeholder="Search by location or Activity">
+        </div>
+        <br>
+        <br>
+        <hr>
+
+        <div class="further-details">
+            <h1>Please share further details / preferences? *</h1> 
+            <form action="form.php">
+                <textarea name="deatils" id="detail1" cols="80" rows="8" placeholder="Type your further details here"></textarea>
+            </form>
+        </div>
+
+        <div>
+            <form action="form.php">
+                <center><input type="button"  value="PLAN IT FOR ME!"></center>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
